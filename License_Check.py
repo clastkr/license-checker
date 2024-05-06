@@ -59,8 +59,8 @@ def check_mac_address(allowed_mac_address):
     return False
 
 if __name__ == "__main__":
-    allowed_mac_address = "14-85-7F-1F-97-CB"
-    serial_number = "01013c42a05b2a582c3e"
+    allowed_mac_address = "맥 주소"
+    serial_number = "시리얼 번호"
     if check_mac_address(allowed_mac_address) and check_device(serial_number):
         expiration_date = datetime(2027, 1, 1, 0, 0, 0, tzinfo=timezone.utc).astimezone(pytz.timezone('Asia/Seoul'))
         check_license(expiration_date)
